@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr Venetia Kotaki | Counselling Psychologist — London SW16</title>
+<meta name="description" content="Dr Venetia Kotaki is a Chartered Counselling Psychologist and HCPC Practitioner based in SW16, London. Face-to-face and online therapy for individuals, couples and families.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root {
+  --ink:   #1C1C1A;
+  --mid:   #68655E;
+  --muted: #9C9890;
+  --rule:  #E2DED8;
+  --cream: #F7F4EF;
+  --off:   #FDFCFA;
+  --sage:  #6B8C76;
+  --sage-l:#EBF0EC;
+  --dark:  #21211F;
+  --warm:  #C4906A;
+
+  --serif: 'Cormorant', Georgia, serif;
+  --sans:  'Jost', sans-serif;
+  --max:   1160px;
+  --gap:   clamp(20px, 4vw, 56px);
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); font-weight: 300; background: var(--cream); color: var(--ink); -webkit-font-smoothing: antialiased; overflow-x: hidden; line-height: 1.6; }
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px var(--gap);
+  background: rgba(247,244,239,0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+}
+.nav-logo {
+  font-family: var(--serif); font-size: 18px; font-weight: 300;
+  color: var(--ink); text-decoration: none; letter-spacing: 0.02em;
+}
+.nav-logo span { font-style: italic; color: var(--sage); }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a {
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--mid); text-decoration: none; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-cta {
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  background: var(--ink); color: var(--off); padding: 10px 22px;
+  text-decoration: none; transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--sage); }
+
+/* HERO */
+.hero {
+  min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr;
+  padding-top: 61px;
+}
+.hero-text {
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: clamp(48px, 8vw, 100px) clamp(24px, 5vw, 80px);
+  background: var(--cream);
+}
+.eyebrow {
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 16px; font-family: var(--sans);
+}
+.hero h1 {
+  font-family: var(--serif); font-weight: 300; font-size: clamp(42px, 5vw, 72px);
+  line-height: 1.05; color: var(--ink); margin-bottom: 20px;
+}
+.hero h1 em { font-style: italic; color: var(--sage); }
+.hero-sub {
+  font-family: var(--serif); font-style: italic; font-size: 19px;
+  font-weight: 300; line-height: 1.8; color: var(--mid);
+  max-width: 440px; margin-bottom: 40px;
+}
+.hero-badges { display: flex; gap: 12px; margin-bottom: 40px; flex-wrap: wrap; }
+.badge {
+  font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  border: 1px solid var(--rule); padding: 6px 14px; color: var(--mid);
+  font-family: var(--sans);
+}
+.btn-primary {
+  display: inline-block; font-size: 11px; letter-spacing: 0.14em;
+  text-transform: uppercase; background: var(--ink); color: var(--off);
+  padding: 14px 32px; text-decoration: none; transition: background 0.2s;
+  align-self: flex-start;
+}
+.btn-primary:hover { background: var(--sage); }
+.btn-outline {
+  display: inline-block; font-size: 11px; letter-spacing: 0.14em;
+  text-transform: uppercase; border: 1px solid var(--ink); color: var(--ink);
+  padding: 13px 32px; text-decoration: none; transition: all 0.2s;
+  align-self: flex-start;
+}
+.btn-outline:hover { background: var(--ink); color: var(--off); }
+
+.hero-image {
+  position: relative; overflow: hidden; background: var(--sage-l);
+}
+.hero-image img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center top;
+  display: block;
+}
+.hero-image-caption {
+  position: absolute; bottom: 24px; left: 24px;
+  font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(255,255,255,0.7); font-family: var(--sans);
+}
+
+/* TRUST BAR */
+.trust-bar {
+  background: var(--dark); padding: 22px var(--gap);
+  display: flex; align-items: center; justify-content: center;
+  gap: clamp(24px, 4vw, 64px); flex-wrap: wrap;
+}
+.trust-item {
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(255,255,255,0.5); display: flex; align-items: center; gap: 10px;
+}
+.trust-item strong { color: rgba(255,255,255,0.85); }
+
+/* SECTIONS */
+section { padding: clamp(60px, 8vw, 120px) var(--gap); }
+.container { max-width: var(--max); margin: 0 auto; }
+
+.section-label {
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 10px;
+}
+h2.serif {
+  font-family: var(--serif); font-weight: 300;
+  font-size: clamp(32px, 3.5vw, 52px); line-height: 1.1;
+  color: var(--ink); margin-bottom: 24px;
+}
+h2.serif em { font-style: italic; }
+.body-serif {
+  font-family: var(--serif); font-style: italic; font-weight: 300;
+  font-size: 18px; line-height: 1.85; color: var(--mid);
+}
+.body-sans {
+  font-size: 15px; line-height: 1.8; color: var(--mid); font-weight: 300;
+}
+
+/* INTRO / ABOUT SPLIT */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 100px); align-items: center; }
+.split-image { position: relative; }
+.split-image img {
+  width: 100%; display: block;
+  filter: saturate(0.9) brightness(1.02);
+}
+.split-image-accent {
+  position: absolute; top: -20px; left: -20px;
+  width: 120px; height: 120px; border: 1px solid var(--sage);
+  z-index: -1;
+}
+
+/* QUOTE */
+.quote-section {
+  background: var(--off);
+  text-align: center;
+}
+.quote-section blockquote {
+  font-family: var(--serif); font-weight: 300; font-style: italic;
+  font-size: clamp(22px, 2.8vw, 38px); line-height: 1.5;
+  color: var(--ink); max-width: 820px; margin: 0 auto 20px;
+}
+.quote-cite {
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* SERVICES */
+.services-section { background: var(--cream); }
+.services-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1px; background: var(--rule); margin-top: 56px;
+}
+.service-card {
+  background: var(--off); padding: 40px 36px;
+  transition: background 0.2s;
+}
+.service-card:hover { background: var(--sage-l); }
+.service-icon {
+  width: 32px; height: 1px; background: var(--sage);
+  margin-bottom: 24px;
+}
+.service-card h3 {
+  font-family: var(--serif); font-weight: 300; font-size: 24px;
+  line-height: 1.2; color: var(--ink); margin-bottom: 12px;
+}
+.service-card p {
+  font-size: 14px; line-height: 1.8; color: var(--mid); margin-bottom: 16px;
+}
+.service-fee {
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--sage);
+}
+
+/* APPROACH */
+.approach-section { background: var(--dark); }
+.approach-section .section-label { color: rgba(255,255,255,0.35); }
+.approach-section h2.serif { color: var(--off); }
+.approach-grid {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 32px; margin-top: 56px;
+}
+.approach-item { border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; }
+.approach-num {
+  font-family: var(--serif); font-size: 42px; font-weight: 300;
+  color: rgba(255,255,255,0.12); line-height: 1; margin-bottom: 12px;
+}
+.approach-item h4 {
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(255,255,255,0.7); margin-bottom: 10px;
+}
+.approach-item p {
+  font-size: 14px; line-height: 1.75; color: rgba(255,255,255,0.45);
+}
+
+/* TESTIMONIALS */
+.testimonials-section { background: var(--off); }
+.testimonials-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 56px;
+}
+.testimonial-card {
+  background: var(--cream); padding: 36px 32px;
+  border-left: 2px solid var(--sage);
+}
+.testimonial-text {
+  font-family: var(--serif); font-style: italic; font-size: 16px;
+  line-height: 1.8; color: var(--ink); margin-bottom: 20px;
+}
+.testimonial-author {
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* FEES */
+.fees-section { background: var(--cream); }
+.fees-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 1px;
+  background: var(--rule); margin-top: 56px;
+}
+.fee-card {
+  background: var(--off); padding: 48px 40px; text-align: center;
+}
+.fee-type {
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 16px;
+}
+.fee-amount {
+  font-family: var(--serif); font-size: 56px; font-weight: 300;
+  color: var(--ink); line-height: 1; margin-bottom: 4px;
+}
+.fee-unit {
+  font-size: 13px; color: var(--muted); margin-bottom: 20px;
+}
+.fee-desc {
+  font-size: 14px; line-height: 1.75; color: var(--mid);
+}
+.fee-free {
+  background: var(--sage-l);
+  border: 1px solid rgba(107,140,118,0.3);
+}
+.fee-free .fee-amount {
+  font-size: 28px; color: var(--sage);
+}
+
+/* CONTACT */
+.contact-section { background: var(--dark); }
+.contact-section .section-label { color: rgba(255,255,255,0.35); }
+.contact-section h2.serif { color: var(--off); margin-bottom: 12px; }
+.contact-split {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; margin-top: 56px;
+}
+.contact-info p {
+  font-size: 15px; line-height: 1.8; color: rgba(255,255,255,0.5); margin-bottom: 32px;
+}
+.contact-detail {
+  display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px;
+}
+.contact-row {
+  display: flex; gap: 16px; align-items: baseline;
+  border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 16px;
+}
+.contact-row-label {
+  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(255,255,255,0.3); min-width: 80px;
+}
+.contact-row-value {
+  font-size: 15px; color: rgba(255,255,255,0.7);
+}
+.contact-row-value a { color: rgba(255,255,255,0.7); text-decoration: none; }
+.contact-row-value a:hover { color: var(--off); }
+.btn-light {
+  display: inline-block; font-size: 11px; letter-spacing: 0.14em;
+  text-transform: uppercase; border: 1px solid rgba(255,255,255,0.25);
+  color: var(--off); padding: 13px 32px; text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-light:hover { background: rgba(255,255,255,0.08); }
+
+/* FORM */
+.contact-form { display: flex; flex-direction: column; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-label {
+  font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+.form-input, .form-textarea {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  color: var(--off); padding: 12px 16px; font-family: var(--sans);
+  font-size: 14px; font-weight: 300; outline: none;
+  transition: border-color 0.2s;
+}
+.form-input:focus, .form-textarea:focus { border-color: var(--sage); }
+.form-textarea { resize: vertical; min-height: 120px; }
+.form-note {
+  font-size: 12px; color: rgba(255,255,255,0.3); line-height: 1.6;
+}
+.btn-submit {
+  background: var(--sage); color: var(--off); border: none;
+  padding: 14px 32px; font-family: var(--sans); font-size: 11px;
+  letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer;
+  transition: background 0.2s; align-self: flex-start;
+}
+.btn-submit:hover { background: #5a7863; }
+
+/* FOOTER */
+footer {
+  background: #1A1A18; padding: 32px var(--gap);
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 16px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-left { font-size: 12px; color: rgba(255,255,255,0.25); }
+.footer-left a { color: rgba(255,255,255,0.4); text-decoration: none; }
+.footer-right {
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.2);
+}
+.footer-right a { color: rgba(255,255,255,0.3); text-decoration: none; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-image { height: 60vw; }
+  .split { grid-template-columns: 1fr; }
+  .split-image { order: -1; }
+  .services-grid { grid-template-columns: 1fr; }
+  .approach-grid { grid-template-columns: 1fr 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .fees-grid { grid-template-columns: 1fr; }
+  .contact-split { grid-template-columns: 1fr; gap: 48px; }
+  .nav-links { display: none; }
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-text > * {
+  animation: fadeUp 0.7s ease both;
+}
+.hero-text > *:nth-child(1) { animation-delay: 0.1s; }
+.hero-text > *:nth-child(2) { animation-delay: 0.2s; }
+.hero-text > *:nth-child(3) { animation-delay: 0.3s; }
+.hero-text > *:nth-child(4) { animation-delay: 0.4s; }
+.hero-text > *:nth-child(5) { animation-delay: 0.5s; }
+.hero-text > *:nth-child(6) { animation-delay: 0.6s; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">Dr Venetia <span>Kotaki</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#fees">Fees</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="#contact">Book a Free Call</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <div class="eyebrow">Chartered Counselling Psychologist &middot; London SW16</div>
+    <h1>A space to be<br>heard, understood<br><em>&amp; supported</em></h1>
+    <p class="hero-sub">I offer warm, evidence-based therapy for individuals, couples and families — face-to-face in Streatham and online across the UK.</p>
+    <div class="hero-badges">
+      <span class="badge">DPsych &mdash; BPS Chartered</span>
+      <span class="badge">HCPC Registered</span>
+      <span class="badge">NHS &amp; Private Experience</span>
+    </div>
+    <a class="btn-primary" href="#contact">Book Your Free 20-Min Consultation</a>
+  </div>
+  <div class="hero-image">
+    <img src="data:image/png;base64,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" alt="Dr Venetia Kotaki, Counselling Psychologist">
+    <div class="hero-image-caption">SW16 &middot; London &middot; Online UK-wide</div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><strong>DPsych</strong> Doctor of Counselling Psychology</div>
+  <div class="trust-item"><strong>BPS</strong> Chartered Psychologist</div>
+  <div class="trust-item"><strong>HCPC</strong> Practitioner Psychologist</div>
+  <div class="trust-item"><strong>NHS</strong> &amp; Private Sector Experience</div>
+  <div class="trust-item">English <strong>&amp;</strong> Greek</div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" style="background: var(--off)">
+  <div class="container">
+    <div class="split">
+      <div class="split-image">
+        <div class="split-image-accent"></div>
+        <img src="data:image/png;base64,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" alt="Dr Venetia Kotaki">
+      </div>
+      <div>
+        <div class="section-label">About Dr Kotaki</div>
+        <h2 class="serif">Helping people is more than<br>just a career <em>for me</em></h2>
+        <p class="body-serif" style="margin-bottom: 24px;">Therapy for me is a safe and confidential place where people can be themselves without fear of judgement — where they can feel listened to, understood, and supported, even during their darkest moments.</p>
+        <p class="body-sans" style="margin-bottom: 24px;">I am a Doctor of Counselling Psychology, a Chartered Counselling Psychologist registered with the BPS, and a Practitioner Psychologist registered with the HCPC. My clinical career spans NHS primary, secondary and in-patient settings, as well as private practice.</p>
+        <p class="body-sans" style="margin-bottom: 36px;">I work with adults, couples and families, using CBT, Psychoanalytic and Psychodynamic therapies, Humanistic and Integrative approaches — always tailored to what you need. I also offer sessions in Greek.</p>
+        <a class="btn-outline" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote-section">
+  <div class="container">
+    <div class="section-label" style="margin-bottom: 32px;">In Their Words</div>
+    <blockquote>"Working with Venetia has been life-changing for our relationship. She created a safe and supportive space, helped us see our patterns more clearly, and gave us tools to navigate conversations we used to avoid."</blockquote>
+    <div class="quote-cite">Jack &amp; Luna, London &mdash; Couples Therapy</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-section">
+  <div class="container">
+    <div class="section-label">What I Offer</div>
+    <h2 class="serif">Therapy tailored<br>to <em>your needs</em></h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"></div>
+        <h3>Individual Therapy</h3>
+        <p>One-to-one sessions for adults dealing with anxiety, depression, low self-esteem, stress, panic attacks, bereavement, trauma, life changes and more. Available face-to-face in SW16 or online.</p>
+        <div class="service-fee">&pound;80 per session</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"></div>
+        <h3>Couples Therapy</h3>
+        <p>Support for couples navigating relationship difficulties, communication breakdown, conflict, infidelity, or major life transitions. A structured space to understand each other more deeply.</p>
+        <div class="service-fee">&pound;110 per session</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"></div>
+        <h3>Family Therapy</h3>
+        <p>Working with families to improve communication, resolve conflict, and strengthen relationships. Sessions adapted to the specific dynamics and needs of your family.</p>
+        <div class="service-fee">&pound;130 per session</div>
+      </div>
+    </div>
+    <p style="margin-top: 24px; font-size:13px; color: var(--muted);">A limited number of concessionary places are available. Please enquire directly.</p>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="approach-section">
+  <div class="container">
+    <div class="section-label">My Approach</div>
+    <h2 class="serif" style="max-width: 560px;">An individualised programme<br><em>built around you</em></h2>
+    <div class="approach-grid">
+      <div class="approach-item">
+        <div class="approach-num">01</div>
+        <h4>Cognitive Behavioural Therapy</h4>
+        <p style="color: rgba(255,255,255,0.4); font-size:14px; line-height:1.75">A structured, evidence-based approach that helps you understand the links between thoughts, feelings and behaviour — and change the patterns that aren't working.</p>
+      </div>
+      <div class="approach-item">
+        <div class="approach-num">02</div>
+        <h4>Psychoanalytic &amp; Psychodynamic</h4>
+        <p style="color: rgba(255,255,255,0.4); font-size:14px; line-height:1.75">Exploring how past experiences and unconscious processes shape your present — creating deeper self-understanding and lasting change.</p>
+      </div>
+      <div class="approach-item">
+        <div class="approach-num">03</div>
+        <h4>Humanistic Therapy</h4>
+        <p style="color: rgba(255,255,255,0.4); font-size:14px; line-height:1.75">Centred on your innate capacity for growth and self-awareness, with warmth, empathy and unconditional positive regard at the core of our work together.</p>
+      </div>
+      <div class="approach-item">
+        <div class="approach-num">04</div>
+        <h4>Integrative Approach</h4>
+        <p style="color: rgba(255,255,255,0.4); font-size:14px; line-height:1.75">Drawing flexibly from multiple modalities, I create a personalised treatment plan based on your needs, goals and what the evidence shows works best for your difficulties.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials-section">
+  <div class="container">
+    <div class="section-label">Testimonials</div>
+    <h2 class="serif">What clients <em>say</em></h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Since seeing Venetia I feel like my life has done a 180. I have learnt how to regulate my emotions, deal with negative situations and how to feel gratitude. I feel more happy, positive and confident than ever."</p>
+        <div class="testimonial-author">Anna &mdash; Individual Therapy, London</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Venetia has helped us to develop a deeper understanding of ourselves and provided us with excellent tools to communicate more effectively. We argue far less and when we do, we maintain control."</p>
+        <div class="testimonial-author">Emma &amp; Patrick &mdash; Couples Therapy, Streatham</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"I have been able to bring balance and control to my life. Although negative thoughts can flare up, I now feel confident I have the tools and mental strength to manage my emotions."</p>
+        <div class="testimonial-author">Patricia &mdash; Individual Therapy, Clapham</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"I now know I have the tools and capacity to handle any future challenges I may face. Venetia took the time to understand me and what I needed from her without me having to spell it out."</p>
+        <div class="testimonial-author">Julia &mdash; Individual Therapy, London</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Our relationship is now stronger than ever. We were blown away by her empathy, counsel and intelligence and could not recommend her highly enough."</p>
+        <div class="testimonial-author">Charles &amp; Maureen &mdash; Couples Therapy, London</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"I have retraced my steps and learnt how to make peace with intrusive thoughts, break habits and forgive myself. I went from not being able to look my loved ones in the eye to flourishing."</p>
+        <div class="testimonial-author">Eleanor &mdash; Individual Therapy, London</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEES -->
+<section id="fees" class="fees-section">
+  <div class="container">
+    <div class="section-label">Fees &amp; Getting Started</div>
+    <h2 class="serif">Transparent pricing,<br><em>no surprises</em></h2>
+    <div class="fees-grid">
+      <div class="fee-card fee-free">
+        <div class="fee-type">First Step</div>
+        <div class="fee-amount">Free</div>
+        <div class="fee-unit">20&ndash;30 minute consultation call</div>
+        <div class="fee-desc">Before booking your first session, I offer a complimentary video call so we can get to know each other and ensure we're a good fit.</div>
+      </div>
+      <div class="fee-card">
+        <div class="fee-type">Individual Therapy</div>
+        <div class="fee-amount">&pound;80</div>
+        <div class="fee-unit">per 50-minute session</div>
+        <div class="fee-desc">Weekly sessions, moving to fortnightly then monthly as therapy progresses. Three and six-month follow-ups offered where appropriate.</div>
+      </div>
+      <div class="fee-card">
+        <div class="fee-type">Couples &amp; Family</div>
+        <div class="fee-amount">&pound;110<span style="font-size:28px">&ndash;130</span></div>
+        <div class="fee-unit">per session</div>
+        <div class="fee-desc">Couples therapy at &pound;110 &middot; Family therapy at &pound;130. Concessionary places available &mdash; please enquire directly.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-label">Get in Touch</div>
+    <h2 class="serif">Take the first step</h2>
+    <p style="color: rgba(255,255,255,0.4); font-size:15px; max-width: 480px; margin-top: 8px;">I endeavour to respond to all enquiries within 48 hours. Please also check your spam folder.</p>
+    <div class="contact-split">
+      <div class="contact-info">
+        <div class="contact-detail">
+          <div class="contact-row">
+            <span class="contact-row-label">Phone</span>
+            <span class="contact-row-value"><a href="tel:07958137012">07958 137 012</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-row-label">Location</span>
+            <span class="contact-row-value">SW16, London (face-to-face)<br>Online &mdash; UK-wide</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-row-label">Languages</span>
+            <span class="contact-row-value">English &amp; Greek</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-row-label">First step</span>
+            <span class="contact-row-value">Free 20&ndash;30 min consultation call</span>
+          </div>
+        </div>
+        <a class="btn-light" href="tel:07958137012">Call Now</a>
+      </div>
+      <div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label class="form-label">Your Name</label>
+            <input class="form-input" type="text" placeholder="First and last name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input class="form-input" type="email" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">What brings you here?</label>
+            <textarea class="form-textarea" placeholder="A brief note about what you're looking for help with — no need to go into detail at this stage."></textarea>
+          </div>
+          <p class="form-note">Your message is completely confidential. By submitting this form you consent to Dr Kotaki contacting you by email or phone to arrange a consultation.</p>
+          <button class="btn-submit" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    &copy; 2025 Dr Venetia Kotaki &middot; DPsych, BPS Chartered, HCPC Registered &middot;
+    <a href="#">Privacy Policy</a>
+  </div>
+  <div class="footer-right">
+    Website by <a href="https://trevattdesign.com" target="_blank">Trevatt Design</a>
+  </div>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.btn-submit');
+  btn.textContent = 'Message Sent';
+  btn.style.background = '#6B8C76';
+  btn.disabled = true;
+}
+</script>
+
+</body>
+</html>
