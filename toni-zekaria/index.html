@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counsellor in Hendon, London | Toni Zekaria</title>
+  <meta name="description" content="BACP registered counsellor in Hendon NW4. Individual and couples counselling, integrative approach. In-person, online and phone sessions. 07956 844 193.">
+  <link rel="canonical" href="https://client-demos-3kc.pages.dev/toni-zekaria">
+  <meta name="geo.region" content="GB-ENG">
+  <meta name="geo.placename" content="Hendon, London">
+  <meta name="geo.position" content="51.5879;-0.2282">
+  <meta name="ICBM" content="51.5879, -0.2282">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Counsellor in Hendon, London | Toni Zekaria">
+  <meta property="og:description" content="BACP registered counsellor in Hendon NW4. Individual and couples counselling, integrative approach. In-person, online and phone sessions.">
+  <meta property="og:url" content="https://client-demos-3kc.pages.dev/toni-zekaria">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=1200&q=80">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Toni Zekaria Counselling",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hendon",
+      "addressRegion": "London",
+      "postalCode": "NW4",
+      "addressCountry": "GB"
+    },
+    "telephone": "07956844193",
+    "url": "https://client-demos-3kc.pages.dev/toni-zekaria",
+    "description": "BACP registered counsellor offering individual and couples counselling in Hendon, London NW4. Integrative approach. In-person, online and phone sessions.",
+    "priceRange": "£55-£110"
+  }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --rose:       #A97B6E;
+      --rose-mid:   #C29589;
+      --rose-pale:  #E8D4CE;
+      --sage:       #6E8C7A;
+      --sage-light: #A3BFB0;
+      --cream:      #F8F3EE;
+      --warm-white: #FDFAF7;
+      --dark:       #241916;
+      --text:       #3A2B26;
+      --mid:        #7A6058;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      color: var(--text);
+      background: var(--warm-white);
+      line-height: 1.75;
+    }
+
+    /* ---- HEADER ---- */
+    header {
+      position: fixed;
+      inset-block-start: 0;
+      inset-inline: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 6%;
+      background: rgba(253, 250, 247, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(169, 123, 110, 0.15);
+    }
+
+    .logo {
+      font-family: 'Cormorant Garant', serif;
+      font-weight: 400;
+      font-size: 1.25rem;
+      color: var(--dark);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+    }
+
+    .logo em {
+      font-style: normal;
+      color: var(--rose);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.65rem 1.6rem;
+      background: var(--rose);
+      color: white;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn:hover { background: var(--dark); transform: translateY(-1px); }
+
+    .btn-ghost {
+      background: transparent;
+      border: 1.5px solid rgba(255,255,255,0.75);
+      color: white;
+    }
+
+    .btn-ghost:hover {
+      background: white;
+      color: var(--dark);
+      transform: translateY(-1px);
+    }
+
+    /* ---- HERO ---- */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 10rem 6% 6rem;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1800&auto=format&q=75');
+      background-size: cover;
+      background-position: center 40%;
+    }
+
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        170deg,
+        rgba(36, 25, 22, 0.25) 0%,
+        rgba(36, 25, 22, 0.68) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 660px;
+      color: white;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--rose-pale);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-content h1 {
+      font-family: 'Cormorant Garant', serif;
+      font-weight: 300;
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      line-height: 1.18;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-content h1 em {
+      font-style: italic;
+      color: var(--rose-pale);
+    }
+
+    .hero-content p {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.7;
+      opacity: 0.88;
+      max-width: 500px;
+      margin-bottom: 2.25rem;
+    }
+
+    /* ---- SHARED SECTION STYLES ---- */
+    section { padding: 5.5rem 6%; }
+
+    .section-inner { max-width: 1020px; margin: 0 auto; }
+
+    .eyebrow {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--rose);
+      margin-bottom: 0.8rem;
+    }
+
+    h2.section-title {
+      font-family: 'Cormorant Garant', serif;
+      font-weight: 400;
+      font-size: clamp(1.9rem, 3.8vw, 2.75rem);
+      line-height: 1.2;
+      color: var(--dark);
+      margin-bottom: 1.75rem;
+    }
+
+    /* ---- RECOGNITION ---- */
+    .recognition { background: var(--cream); }
+
+    .recognition .section-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.8fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .recognition-left { padding-top: 0.25rem; }
+
+    .recognition-left p {
+      color: var(--mid);
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .recognition-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+
+    .recognition-list li {
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      gap: 0.75rem;
+      align-items: start;
+    }
+
+    .dot {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: var(--rose-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    .dot::after {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--rose);
+    }
+
+    .recognition-list li p { font-size: 0.97rem; color: var(--text); line-height: 1.65; }
+
+    /* ---- ABOUT ---- */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 4.5rem;
+      align-items: start;
+    }
+
+    .portrait-wrap { text-align: center; }
+
+    .portrait-circle {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, var(--rose-mid) 0%, var(--sage-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-family: 'Cormorant Garant', serif;
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: white;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.28rem 0.7rem;
+      border: 1.5px solid var(--rose);
+      color: var(--rose);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border-radius: 2px;
+    }
+
+    .about-text p {
+      color: var(--text);
+      margin-bottom: 1.1rem;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .about-text p:last-child { margin-bottom: 0; }
+
+    /* ---- APPROACH ---- */
+    .approach { background: var(--dark); }
+
+    .approach .eyebrow { color: var(--rose-pale); }
+    .approach h2.section-title { color: white; }
+
+    .approach-lead {
+      color: rgba(255,255,255,0.7);
+      font-size: 1.05rem;
+      max-width: 560px;
+      margin-bottom: 3rem;
+      line-height: 1.75;
+    }
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .approach-card {
+      padding: 2rem;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 4px;
+      transition: border-color 0.2s;
+    }
+
+    .approach-card:hover { border-color: rgba(169, 123, 110, 0.5); }
+
+    .approach-card h3 {
+      font-family: 'Cormorant Garant', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--rose-pale);
+      margin-bottom: 0.75rem;
+    }
+
+    .approach-card p {
+      font-size: 0.93rem;
+      color: rgba(255,255,255,0.68);
+      line-height: 1.75;
+    }
+
+    /* ---- FEES ---- */
+    .fees-intro {
+      max-width: 580px;
+      color: var(--mid);
+      margin-bottom: 2.75rem;
+      font-size: 1rem;
+    }
+
+    .fee-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .fee-card {
+      background: var(--cream);
+      border-top: 3px solid var(--rose);
+      padding: 2rem;
+      border-radius: 0 0 4px 4px;
+    }
+
+    .fee-card h3 {
+      font-family: 'Cormorant Garant', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: var(--dark);
+      margin-bottom: 1.25rem;
+    }
+
+    .fee-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid rgba(58, 43, 38, 0.1);
+      font-size: 0.94rem;
+      gap: 1rem;
+    }
+
+    .fee-row:last-child { border-bottom: none; }
+
+    .fee-row span:first-child { color: var(--text); }
+
+    .fee-amount {
+      font-weight: 500;
+      color: var(--rose);
+      white-space: nowrap;
+    }
+
+    .fee-note {
+      font-size: 0.88rem;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+
+    /* ---- CONTACT ---- */
+    .contact { background: var(--cream); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .contact-left h2 {
+      font-family: 'Cormorant Garant', serif;
+      font-size: clamp(1.9rem, 3.8vw, 2.75rem);
+      font-weight: 400;
+      color: var(--dark);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .contact-left .lead {
+      color: var(--mid);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .contact-details {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .contact-details li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .contact-details li svg { flex-shrink: 0; }
+
+    .contact-details a {
+      color: var(--rose);
+      text-decoration: none;
+    }
+
+    .contact-details a:hover { text-decoration: underline; }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .field { display: flex; flex-direction: column; }
+
+    label {
+      font-size: 0.74rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.4rem;
+    }
+
+    input, select, textarea {
+      padding: 0.8rem 1rem;
+      border: 1.5px solid rgba(58, 43, 38, 0.18);
+      border-radius: 2px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text);
+      background: white;
+      transition: border-color 0.2s;
+      width: 100%;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--rose);
+    }
+
+    textarea { min-height: 130px; resize: vertical; }
+
+    .form-submit .btn {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+    }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.5);
+      padding: 2.5rem 6%;
+      text-align: center;
+      font-size: 0.84rem;
+      line-height: 1.8;
+    }
+
+    footer strong { color: rgba(255,255,255,0.85); font-weight: 400; }
+
+    footer a {
+      color: var(--rose-pale);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 840px) {
+      .recognition .section-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .portrait-wrap { order: -1; }
+
+      .approach-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .fee-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .form-row { grid-template-columns: 1fr; }
+
+      header { padding: 1rem 5%; }
+
+      section { padding: 4rem 5%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">Toni <em>Zekaria</em></a>
+    <a href="#contact" class="btn">Get in touch</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg" role="img" aria-label="Soft natural light through a window in a calm, plant-filled room"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Counselling in Hendon, London NW4</span>
+      <h1>You don't have to carry this <em>on your own</em></h1>
+      <p>A warm, non-judgmental space to understand yourself better, work through what's difficult, and find a way forward that feels like yours.</p>
+      <a href="#contact" class="btn btn-ghost">Book a session</a>
+    </div>
+  </section>
+
+  <section class="recognition">
+    <div class="section-inner">
+      <div class="recognition-left">
+        <span class="eyebrow">You might be here because</span>
+        <h2 class="section-title">Something isn't sitting right</h2>
+        <p>Whatever has brought you here, you are not alone in it. Many people find that talking to someone outside their life helps them see more clearly.</p>
+      </div>
+      <ul class="recognition-list">
+        <li>
+          <div class="dot"></div>
+          <p>You're stuck in patterns you can see clearly but can't seem to shift, no matter how much you try</p>
+        </li>
+        <li>
+          <div class="dot"></div>
+          <p>There is tension or distance in a relationship, and you don't quite know how to bridge it</p>
+        </li>
+        <li>
+          <div class="dot"></div>
+          <p>A low mood, restless anxiety, or a quiet heaviness has been following you around for a while</p>
+        </li>
+        <li>
+          <div class="dot"></div>
+          <p>You have been through something difficult and need a space to process it without being judged</p>
+        </li>
+        <li>
+          <div class="dot"></div>
+          <p>Life feels overwhelming and you are struggling to see clearly or make decisions that feel right</p>
+        </li>
+        <li>
+          <div class="dot"></div>
+          <p>You want to understand yourself better and make choices that genuinely reflect who you are</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="portrait-wrap">
+          <div class="portrait-circle" aria-label="Toni Zekaria, BACP Registered Counsellor">TZ</div>
+          <div class="badge-row">
+            <span class="badge">BACP Registered</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">About Toni</span>
+          <h2 class="section-title">A counsellor who understands that life rarely goes to plan</h2>
+          <p>Before training as a counsellor, I spent years in careers built entirely around people. I managed a luxury boutique hotel, and then started and ran my own bakery and cafe. Both taught me a great deal about care, communication, and what people need when things get hard.</p>
+          <p>That background shapes how I work. I bring warmth, curiosity, and a genuine interest in the person in front of me to every session. I'm not here to hand out advice or tell you what to do. My role is to help you understand yourself more clearly, so that the choices you make can come from a more grounded, considered place.</p>
+          <p>I offer counselling in English and French and work with adults of all ages. Sessions are available in person at an NHS GP surgery in Hendon, NW4, as well as online and by phone. I am registered with the British Association for Counselling and Psychotherapy (BACP) and work fully within their ethical framework, with regular supervision and ongoing professional development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="approach">
+    <div class="section-inner">
+      <span class="eyebrow">How I work</span>
+      <h2 class="section-title">Therapy that meets you where you are</h2>
+      <p class="approach-lead">I take an integrative approach, which means I draw on a range of methods and adapt how I work to suit what you actually need. No fixed script, no one-size-fits-all framework.</p>
+      <div class="approach-grid">
+        <div class="approach-card">
+          <h3>Flexible, integrative approach</h3>
+          <p>Rather than following a single method, I draw from a range of evidence-based approaches and tailor each session to you. Your needs are the starting point, not a theory.</p>
+        </div>
+        <div class="approach-card">
+          <h3>Short-term or open-ended</h3>
+          <p>Counselling can be brief and focused on a specific issue, or longer and more exploratory. We will work out together what makes sense for you, and revisit that as we go.</p>
+        </div>
+        <div class="approach-card">
+          <h3>A space that is genuinely yours</h3>
+          <p>Every session is 50 minutes, confidential, and free from judgement. Whatever you bring, I will meet it with respect for your individuality, your background, and your own way of making sense of the world.</p>
+        </div>
+        <div class="approach-card">
+          <h3>Individual and couples sessions</h3>
+          <p>I work with individuals working through personal difficulties, and with couples who want to improve communication, reconnect, or navigate conflict together. Sessions are available in person, online, or by phone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fees">
+    <div class="section-inner">
+      <span class="eyebrow">Sessions and fees</span>
+      <h2 class="section-title">Clear, straightforward pricing</h2>
+      <p class="fees-intro">All sessions are 50 minutes. I offer in-person sessions at an NHS GP surgery in Hendon, NW4, as well as online and phone sessions for clients anywhere in the UK.</p>
+      <div class="fee-grid">
+        <div class="fee-card">
+          <h3>Individual counselling</h3>
+          <div class="fee-row">
+            <span>Daytime weekday sessions</span>
+            <span class="fee-amount">£55</span>
+          </div>
+          <div class="fee-row">
+            <span>Evenings from 6pm</span>
+            <span class="fee-amount">£65</span>
+          </div>
+          <div class="fee-row">
+            <span>Sunday mornings</span>
+            <span class="fee-amount">£65</span>
+          </div>
+        </div>
+        <div class="fee-card">
+          <h3>Couples counselling</h3>
+          <div class="fee-row">
+            <span>Daytime weekday sessions</span>
+            <span class="fee-amount">£90</span>
+          </div>
+          <div class="fee-row">
+            <span>Evenings from 6pm</span>
+            <span class="fee-amount">£110</span>
+          </div>
+          <div class="fee-row">
+            <span>Sunday mornings</span>
+            <span class="fee-amount">£110</span>
+          </div>
+        </div>
+      </div>
+      <p class="fee-note">Sessions are 50 minutes. I offer both short-term focused work and longer open-ended counselling. To discuss what might work best for you, please get in touch directly.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Ready to take the first step?</h2>
+          <p class="lead">Send a message and I will get back to you to arrange a time to talk. Everything is confidential and there is no obligation.</p>
+          <ul class="contact-details">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="#A97B6E"/>
+              </svg>
+              Hendon, London NW4
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" fill="#A97B6E"/>
+              </svg>
+              In person, online, or by phone
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" fill="#A97B6E"/>
+              </svg>
+              <a href="tel:07956844193">07956 844 193</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" fill="#A97B6E"/>
+              </svg>
+              Also available in French
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formspree integration: update action attribute with your Formspree endpoint -->
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number <span style="text-transform:none;font-weight:300;">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="contact-pref">Preferred contact method</label>
+            <select id="contact-pref" name="contact_preference">
+              <option value="">Please select</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone call</option>
+              <option value="whatsapp">WhatsApp</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="Tell me a little about what you are looking for..."></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn">Send message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Toni Zekaria</strong>, BACP Registered Counsellor &bull; Hendon, London NW4 &bull; &copy; 2026</p>
+    <p>Website by <a href="https://trevattdesign.com" target="_blank" rel="noopener noreferrer">Trevatt Design</a></p>
+  </footer>
+
+</body>
+</html>
