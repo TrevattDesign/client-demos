@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex">
+  <title>Design brief builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark"><span class="brand-dot"></span> Trevatt Design</div>
+      </div>
+
+      <nav class="step-nav" id="step-nav" aria-label="Steps"></nav>
+    </aside>
+
+    <main class="main">
+      <div class="progress" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+
+      <div id="step-content"></div>
+
+      <div class="actions">
+        <button class="btn" id="btn-back" type="button">← Back</button>
+        <span class="spacer"></span>
+        <button class="btn btn-primary" id="btn-next" type="button">Next →</button>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
